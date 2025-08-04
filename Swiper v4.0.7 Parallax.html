@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper v4.0.7 Parallax Effect</title>
+
+  <link rel="stylesheet" href="css/swiper.v4.0.7.min.css">
+
+  <style>
+    body { margin: 0; }
+    .swiper-container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .slide-inner {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Swiper HTML -->
+<div class="swiper-container swiperDefault">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image: url(https://picsum.photos/id/1011/1200/800);">
+        <h2 style="color: white; padding: 20px;" data-swiper-parallax="300">Slide One</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image: url(https://picsum.photos/id/1015/1200/800);">
+        <h2 style="color: white; padding: 20px;" data-swiper-parallax="300">Slide Two</h2>
+      </div>
+    </div>
+  </div>
+  <!-- controls -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="js/swiper.v4.0.7.min.js"></script>
+
+</body>
+</html>
